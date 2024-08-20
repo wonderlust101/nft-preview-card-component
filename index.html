@@ -4,31 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--     <meta name="title" content="title"> -->
-    <!--     <meta name="keywords" content="keyword"> -->
-    <!--     <meta name="description" content="description"> -->
+    <meta name="title" content="NFT Card Components">
+    <meta name="keywords" content="NFT, Crypto, Cryptocurrency, Bitcoin, Ethereum">
+    <meta name="description" content="An NFT Card Component displays a digital asset with details like its name, price, and creator. It’s used on
+    platforms to show individual NFTs in a collection.">
 
-    <title>Document</title>
-    <!--         <link rel="icon" href="assets/images/favicon.png" /> -->
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
 
     <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
 <body>
-    <div style="display: grid; height: 100vh;">
-        <div style="width: 100%; background-color:var(--clr-primary-color-star-dust); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-election-night)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-crackled); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-fading-horizon)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-neon-spring); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-iris-royale)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-iris-royale); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-neon-spring)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-fading-horizon); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-crackled)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-election-night);display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-star-dust)">Neon Genesis Evangelion</h1></div>
-    </div>
+    <header class="sr-only">
+        <h1>An NFT Card Component displays a digital asset with details like its name, price, and creator.</h1>
+    </header>
 
-    <script src="assets/scripts/index.js"></script>
+    <article class="nft-card">
+        <figure class="hover-image">
+            <div class="hover-image__hover-element">
+                <img src="assets/images/icon-view.svg" alt="Eye Icon" aria-hidden="true">
+            </div>
+
+            <img src="assets/images/image-equilibrium.jpg" alt="Illustration of the NFT">
+        </figure>
+
+        <section class="nft-card__info">
+            <p class="sr-only">Name of NFT Card:</p>
+            <h2 class="nft-card__name">Equilibrium #3429</h2>
+
+            <p class="txt-blue"> Our Equilibrium collection promotes balance and calm.</p>
+
+            <dl class="nft-card__indicators">
+                <div class="nft-card__price">
+                    <img src="assets/images/icon-ethereum.svg" alt="Icon of ethereum" aria-hidden="true">
+                    <dd>
+                        <p class="sr-only">Price of NFT Card:</p>
+                        <p class="txt-cyan">0.041 ETH</p>
+                    </dd>
+                </div>
+
+                <div class="nft-card__time">
+                    <img class="nft-card__indicator-image" src="assets/images/icon-clock.svg" alt="Icon of ethereum" aria-hidden="true">
+                    <dd>
+                        <p class="sr-only">Days left until auction day:</p>
+                        <p class="txt-blue">3 days left</p>
+                    </dd>
+                </div>
+            </dl>
+        </section>
+
+        <hr class="nft-card__divider">
+
+        <footer class="nft-card__author">
+            <img class="nft-card__author-image" src="assets/images/image-avatar.png" alt="Profile picture of the NFT creator">
+            <p class="txt-blue">Creation of <span class="nft-card__author-name">Jules Wyvern</span></p>
+        </footer>
+    </article>
 </body>
 </html>

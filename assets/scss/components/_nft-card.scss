@@ -1,0 +1,67 @@
+.nft-card {
+  display: grid;
+  gap: 1.5rem;
+  width: min(90%, 24rem);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--clr-neutral-800);
+  color: var(--clr-primary-blue);
+  box-shadow: 10px 10px 40px var(--clr-shadow);
+
+  &__info {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  &__name {
+    &:hover {
+      color: var(--clr-primary-cyan);
+    }
+  }
+
+  &__indicators {
+    display: flex;
+
+    & :not(:first-child) {
+      margin-left: auto;
+    }
+  }
+
+  &__time, &__price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+  }
+
+  &__price{
+    color: var(--clr-primary-cyan);
+  }
+
+  &__time {
+    color: var(--clr-primary-blue);
+  }
+
+  &__divider {
+    border: 1px solid var(--clr-primary-blue);
+  }
+
+  &__author {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__author-image {
+    width: 2rem;
+    border: 1px solid var(--clr-white);
+    border-radius: 50rem;
+  }
+
+  &__author-name {
+    color: var(--clr-white);
+
+    &:hover {
+      color: var(--clr-primary-cyan);
+    }
+  }
+}

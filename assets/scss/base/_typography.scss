@@ -2,5 +2,22 @@
 
 h1, h2, h3, h4,
 h5, h6, p {
+  font-family: 'Outfit', sans-serif;
+}
 
+h2 {
+  color: var(--clr-white);
+  font-size: 1.25rem;
+
+  @include a.breakpoint(small) {
+      font-size: 1.5rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+
+  @include a.breakpoint(small) {
+    font-size: 1.125rem;
+  }
 }
